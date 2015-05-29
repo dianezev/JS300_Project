@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Module_6 Assignment Tests</title>
+	<link rel="stylesheet" href="libs/mocha.css"/>
+</head>
+<body>
+	<div id="mocha"></div>
+	<script src="js/enhancedDate.js"></script>
+	<script src="libs/mocha.js"></script>
+	<script src="libs/chai.js"></script>
+	<script>
+		var expect = chai.expect;
+		mocha.setup({
+			ui: "bdd",
+			ignoreLeaks: true,
+            timeout: 2000
+		});
+		window.onload = function () {
+			mocha.run();
+		};
+	</script>
+	<script src="client/enhancedDate.spec.js"></script>
+</body>
+</html>
